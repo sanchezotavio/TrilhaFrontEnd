@@ -1,0 +1,97 @@
+$font: 'Arial';
+$bg: #ffffff;
+$main-color: #671E8C;
+
+body {
+  margin: 0;
+  position: relative;
+  background-color: $bg;
+  font-family: $font;
+}
+
+.header {
+  background-color: $main-color;
+  padding: 5px 0;
+}
+
+.logo {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+
+  &__span {
+    font-weight: 800;
+  }
+}
+
+.button {
+  background-color: $main-color;
+  color: #ffffff;
+  border: 2px solid $main-color;
+}
+
+.search {
+  width: 100%;
+  padding: 20px 0;
+
+  &__input {
+    width: 88%;
+    padding: 1%;
+  }
+
+  &__button {
+    @extend .button;
+    width: 8%;
+    padding: 1%;
+  }
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative;
+}
+
+.movies {
+  width: 20%;
+  float: right;
+}
+
+.movie{
+  width: 100%;  
+}
+
+.play__movie{
+  @extend .movie; 
+  height: 500px;
+}
+
+
+
+
+.play {
+  width: 70%;
+ float: left;
+}
+
+.img {
+  width: 100%;
+}
+
+.movie {
+  &__img {
+    @extend .img;
+  }
+}
+
+.title {
+  margin: 1em 0;
+  font-size: 16px;
+  font-family: $font;
+}
+
+.paragraph {
+  margin: 0;
+  font-size: 14px;
+  font-family: $font;
+}

@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  position: relative;
+  background-color: #ffffff; }
+
+.container {
+  width: 80%;
+  margin: auto;
+  position: relative; }
+
+.title {
+  margin: 1em 0;
+  font-size: 16px;
+  font-family: "Arial"; }
+
+.paragraph {
+  margin: 0;
+  font-size: 14px;
+  font-family: "Arial"; }

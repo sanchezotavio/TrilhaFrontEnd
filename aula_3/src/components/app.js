@@ -24,7 +24,8 @@ class App extends Component {
   }
 
   search (term) {
-    axios.get(`https://www.googleapis.com/youtube/v3/search?part=id,snippet&type=${term}&&key=AIzaSyAB_tTATR8nJh02oDfHEIyAQTgiLo8P9YQ`).then((response) => {
+    
+    axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=${term}&type=video&key=AIzaSyAB_tTATR8nJh02oDfHEIyAQTgiLo8P9YQ`).then((response) => {
      console.log(response.data.items)
       this.setState({
         shows: response.data.items,
